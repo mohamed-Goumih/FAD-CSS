@@ -1,0 +1,48 @@
+<style>
+    .flex-container{
+        display: flex;
+        flex-direction: row;
+    }
+    .flex-container>div{
+        background-color: rgb(124,30,255);
+        color: white;
+        margin: 10px;
+        text-align:center;
+        font-size: 30px;
+       
+
+    }
+    .div1{
+    flex: 0 0 200px;
+    order:200
+    }
+    .div2{
+    order:40 ;
+}
+.div3{
+align-self: flex-end;
+order: 30;
+}
+.div4{
+order:-5
+}
+
+</style>
+
+<div class="flex-container">
+
+    <div class="div1">1</div>
+    <div class="div2 div22">Element 2</div>
+    <div class="div3">3</div>
+    <div class="div4">4</div>
+
+</div>
+
+<!-- order 
+ 1 2 3 4
+ 4 3 2 1
+ 3 2 1 4
+ 2 1 4 3
+
+
+-->

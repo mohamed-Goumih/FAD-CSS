@@ -1,0 +1,56 @@
+<style>
+    .grid-container {
+        display: grid;
+        background-color: #2196F3;
+        padding: 20px;
+        height: 100vh;
+
+        gap: 10px;
+        color: white;
+
+        /* Définir les colonnes de la grille */
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto auto 1fr auto;
+        
+        grid-template-areas: 
+        "header header header header header header"
+        "navigation main main main sidebar sidebar"
+        "navigation main main main sidebar sidebar"
+        "footer footer footer footer footer footer";
+    }
+
+    .grid-item {
+        background-color: hsla(197, 83%, 50%, 0.8);
+        padding: 20px;
+        text-align: center;
+        border: 1px solid white;
+    }
+
+    .item1 {
+        grid-area: header;
+    }
+
+    .item2 {
+        grid-area: navigation;
+    }
+
+    .item3 {
+        grid-area: main;
+    }
+
+    .item4 {
+        grid-area: sidebar;
+    }
+
+    .item5 {
+        grid-area: footer;
+    }
+</style>
+
+<div class="grid-container">
+    <div class="grid-item item1">Header</div>
+    <div class="grid-item item2">Navigation</div>
+    <div class="grid-item item3">Main</div>
+    <div class="grid-item item4">Sidebar</div>
+    <div class="grid-item item5">Footer</div>
+</div>
